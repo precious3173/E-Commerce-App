@@ -10,6 +10,19 @@ function LoginScreen(){
 flex={1}
 source = {require ('./assets/anime.jpg')}
 />
+
+<Box
+w ="full"
+h = "full"
+position = "absolute"
+top = "0"
+px ="6"
+justifyContent = "center">
+
+<Heading>
+    SIGN IN
+</Heading>
+</Box>
 </Box>
 
 
