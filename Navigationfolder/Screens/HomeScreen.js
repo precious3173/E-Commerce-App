@@ -7,7 +7,7 @@ export default function HomeScreen(navigation){
     return (
 
         <View styles ={
-            {flex:1, alignItems: 'center', justifyContent: 'center'}
+            {backgroundColour: 'red'}
         }>
          
       <Text
@@ -15,7 +15,7 @@ export default function HomeScreen(navigation){
         ()=> alert(
             'Welcome Home'
 )
-    }
+    } 
       >
         Home
         

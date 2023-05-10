@@ -35,10 +35,10 @@ return(
                             iconName = focused? 'home': 'home-outline'
                         }
                         else if (rn === profileName){
-                         iconName = focused? 'list' : 'profile-outline'
+                         iconName = focused? 'person' : 'person-outline'
 
                         }else if (rn === itemName){
-                            iconName = focused? 'item' : 'item-outline'
+                            iconName = focused? 'list' : 'list-outline'
    
                            }
                            return <Ionicons name= {iconName} size ={size}
@@ -46,6 +46,11 @@ return(
                            />
                     },
                 })}
+
+                tabBarOptions = {{
+                    activeTintColor : "pink"
+                    
+                }} 
         >
 
            <Tab.Screen name ={ homeName} component = {HomeScreen}/>
