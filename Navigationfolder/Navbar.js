@@ -48,8 +48,8 @@ return(
                 })}
 
                 tabBarOptions = {{
-                    activeTintColor : "pink"
-                    
+                    activeTintColor : "red"
+
                 }} 
         >
 

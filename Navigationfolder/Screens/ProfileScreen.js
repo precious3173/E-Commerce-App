@@ -1,24 +1,28 @@
-import { View, Text } from "react-native";
+import { ScrollView } from "native-base";
+import { View, Text, SafeAreaView } from "react-native";
 
 export default function ProfileScreen(navigation){
 
     return (
 
-        <View styles ={
+        <SafeAreaView styles ={
             {flex:1, alignItems: 'center', justifyContent: 'center'}
         }>
          
-      <Text
-      onPress= {
-        ()=> alert(
-            'My Profile'
-)
-    }
-      >
-        Profile
-        
-      </Text>
-        </View>
+        <ScrollView>
+
+
+        </ScrollView>
+        </SafeAreaView>
     );
 
 }
+
+const styles = StyleSheet.create({
+
+    container:{
+      flex:1,
+      backgroundColor: '#fff',
+      padding: 20  
+    }
+})
