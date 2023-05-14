@@ -6,7 +6,7 @@ export default function ProfileScreen(navigation){
     return (
 
         <SafeAreaView styles ={
-            {flex:1, alignItems: 'center', justifyContent: 'center'}
+        styles.container
         }>
          
         <ScrollView>
@@ -24,5 +24,9 @@ const styles = StyleSheet.create({
       flex:1,
       backgroundColor: '#fff',
       padding: 20  
+    },
+    header: {
+        backgroundColor: 'pink',
+        padding: 20
     }
 })
