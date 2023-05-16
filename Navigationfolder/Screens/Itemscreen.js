@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 export default function Itemscreen(navigation){
 
@@ -20,8 +20,8 @@ export default function Itemscreen(navigation){
           {names.map((item) =>{
 
            return(
-            <View>
-              <Text>{item.name}</Text>
+            <View >
+              <Text style= {styles.item}>{item.name}</Text>
             </View>
            )
           })}
@@ -30,3 +30,12 @@ export default function Itemscreen(navigation){
     );
 
 }
+
+const styles = StyleSheet.create({
+
+  item: {
+    marginTop: 24,
+    padding: 30,
+    backgroundColor: 'pink'
+  }
+});
