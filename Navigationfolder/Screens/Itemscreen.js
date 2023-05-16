@@ -1,5 +1,7 @@
+import { ScrollView } from "react";
 import { useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
+
 
 export default function Itemscreen(navigation){
 
@@ -14,7 +16,9 @@ export default function Itemscreen(navigation){
   ]);
     return (
 
-        <View styles ={
+      <ScrollView>
+
+<View styles ={
             {flex:1, alignItems: 'center', justifyContent: 'center'}
         }>
           {names.map((item) =>{
@@ -22,11 +26,19 @@ export default function Itemscreen(navigation){
            return(
             <View >
               <Text style= {styles.item}>{item.name}</Text>
+            <View>
+
+              <Image
+              source={ require('./assets/anime.jpg')}
+              />
+            </View>
             </View>
            )
           })}
 
         </View>
+      </ScrollView>
+       
     );
 
 }
